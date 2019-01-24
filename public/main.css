@@ -3,63 +3,65 @@
   padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body, html {
   height: 100%;
-  background-color: #cccccc;
+  background-color: black;
   text-align: center;
  }
 
- #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
- }
+
 
  .background-image {
-  background-image: url("public/Image-mask.png");
+  z-index: -25;
+  opacity: 0.5;
+  background-image: url("public/gang-member-home-page.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover
-
  }
 
  h1 {
+   z-index: 25;
    color:white;
    font-size: 20vw;
    padding-top: 150px;
    padding-bottom: 0px;
- }
-
- .header {
-
+   opacity: 1;
  }
 
  h4 {
    color: grey;
-   font-size: 6vw
+   font-size: 6vw;
+   font-family: Arial, Helvetica, sans-serif
+   
  }
 
  .button1 {
-    background-color: red;
-    /* font-size: 2em; */
-    border-radius: 12px;
+    background-color: #A21212;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-radius: 30px;
     color: white;
     margin: 25px;
-
-
+    border: transparent;
+    border-width: 4px
  }
 
  .button2 {
-    background-color: blue;
-    border-radius: 12px;
-    /* opacity: 0.2 */
+    background-color: transparent;
+    padding: 20px 20px;
+    font-size: 30px;
+    border-radius: 30px;
     color:white;
     margin: 25px;
+    border-color: #A21212;
+    border-width: 4px
+}
+
+.button2:hover {
+  background-color: #A21212;
+  color: white;
 }
