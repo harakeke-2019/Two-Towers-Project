@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  background-color: #cccccc;
+  text-align: center;
+ }
+
+ #overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+ }
+
+ .background-image {
+  background-image: url("public/Image-mask.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+
+ }
+
+ h1 {
+   color:white;
+   font-size: 20vw;
+   padding-top: 150px;
+   padding-bottom: 0px;
+ }
+
+ .header {
+
+ }
+
+ h4 {
+   color: grey;
+   font-size: 6vw
+ }
+
+ .button1 {
+    background-color: red;
+    /* font-size: 2em; */
+    border-radius: 12px;
+    color: white;
+    margin: 25px;
+
+
+ }
+
+ .button2 {
+    background-color: blue;
+    border-radius: 12px;
+    /* opacity: 0.2 */
+    color:white;
+    margin: 25px;
+}
