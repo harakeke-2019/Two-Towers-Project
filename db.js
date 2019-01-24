@@ -16,13 +16,13 @@ function getListing (db = connection) {
 }
 
 // make this newListing
-function newListing (title, description, db = connection) {
+function newListing (id, title, description, db = connection) {
   return db('listings')
     .insert({
+      user_id: id,
       title: title,
       description: description
     })
-    
 }
 
 function getUser (id, db = connection) {

@@ -29,9 +29,10 @@ router.get('/home', (req, res) => {
 })
 
 router.post('/listings', (req, res) => {
+  const id = Number(req.body.user_id)
   const title = req.body.title
   const description = req.body.description
-  db.newListing(title, description)
+  db.newListing(id, title, description)
     .then(getListings)
     .catch(displayErrors)
 
