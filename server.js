@@ -15,6 +15,8 @@ server.use(express.urlencoded({extended: true}))
 
 // Routes
 
+server.use(express.static('public'))
+
 server.use('/', userRoutes)
 
 module.exports = server
