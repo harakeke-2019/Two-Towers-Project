@@ -12,7 +12,7 @@ router.get('/listings', (req, res) => {
   db.getListing()
     .then(listings => {
       console.log(listings[0])
-      res.render('alllistings', {listings})
+      res.render('alllistings', { listings })
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
@@ -24,10 +24,15 @@ router.get('/form', (req, res) => {
   res.render('form')
 })
 
+router.get('/home', (req, res) => {
+  res.render('home')
+})
+
 router.post('/listings', (req, res) => {
+  const id = Number(req.body.user_id)
   const title = req.body.title
   const description = req.body.description
-  db.newListing(title, description)
+  db.newListing(id, title, description)
     .then(getListings)
     .catch(displayErrors)
 
