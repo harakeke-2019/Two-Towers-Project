@@ -12,7 +12,7 @@ router.get('/listings', (req, res) => {
   db.getListing()
     .then(listings => {
       console.log(listings[0])
-      res.render('alllistings', {listings})
+      res.render('alllistings', { listings })
     })
     .catch(err => {
       res.status(500).send('DATABASE ERROR: ' + err.message)
