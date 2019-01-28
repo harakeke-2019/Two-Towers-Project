@@ -1,19 +1,33 @@
-<body>
-  {{{body}}}
-<h1>New Listing</h1>
-<form method="POST" action='/listings'>
-<p>
-Title:
-</p>
-<p>
-<input type="text" id="name" name="title">
-</p>
-<p>
-Description:
-</p>
-<p>
-<input type="text" id="description" name="description">
-<input type="submit" value="Submit">
-</p>
+
+<body class="body-form">
+  <container>
+<form action="/listings" method='post' >
+  <div>
+    <centre>
+   <label class="h4">Title</label>
+    </centre>
+ 
+    <centre>
+    <input class="title-input" type="text" name="title" placeholder="Enter Title">
+    </centre>
+  </div>
+<br>
+<br>
+  <div>
+    <centre>
+    <label class="h4">Description</label>
+    </centre>
+
+  
+    <centre>
+    <input class="description-input" type="text"  name="description" placeholder="Description">
+    </centre>
+  </div>
+
+  <div>
+  </div>
+  <a href="http://localhost:3000/home"><button class="button3">Go Back</button></a>
+ <a href="http://localhost:3000/listings"> <button class="button3" type="submit"  >Submit</button></a>
 </form>
+  </container>
 </body>

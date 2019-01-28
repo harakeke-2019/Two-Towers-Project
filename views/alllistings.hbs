@@ -1,11 +1,12 @@
 
-<body>
+<body class="body">
 <div>
+  <hr>
   {{#each listings}}
-  <h1>{{title}}</h1>
-  <p>{{description}}</p>
+  <div class="listing-card">
+  <h2 class="h2">{{title}}</h2>
+  <h4 class="h4">{{description}}</h4>
+  </div>
   {{/each}}
-    
-
 </div>
 </body>

@@ -6,6 +6,7 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
   // the root route renders the landing page
+  res.redirect('/home')
 })
 
 router.get('/listings', (req, res) => {
